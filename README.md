@@ -1,14 +1,15 @@
 # Creative Ideas Notebook
 
-This beginner-friendly Google Colab notebook asks for an everyday object and uses the OpenAI Responses API to suggest **one unusual, practical use** for it.
+This beginner-friendly Google Colab notebook suggests **three distinct, unusual, practical uses** for an everyday object. It uses the OpenAI Responses API with the gpt-6-luna model.
 
-## Open it in Google Colab
+## Use the notebook
 
-1. Upload creative_ideas.ipynb to Google Drive, or open the notebook from your repository in Colab.
-2. Run the cells from top to bottom.
-3. When prompted, enter your OpenAI API key. The notebook uses getpass so the key is not shown while you type.
-4. Enter an everyday object and read the suggested use.
+1. Upload creative_ideas.ipynb to Google Drive and open it in Google Colab.
+2. Run the cells from top to bottom. The setup cell installs the OpenAI Python SDK.
+3. Enter your OpenAI API key when prompted. getpass hides the key as you type; it is not hardcoded or printed by the notebook.
+4. Enter an everyday object. The notebook makes one API request and prints a numbered list of exactly three ideas.
+5. Enter another object to continue, or type exit to see the goodbye message and stop.
 
-The first setup cell installs or updates the openai Python SDK. The key is entered at runtime and is not included in the notebook source. Avoid saving a copy of the notebook with outputs that contain sensitive information.
+If you submit an empty object name, the notebook asks again without making an API request.
 
-The notebook uses the model gpt-6-luna through the Responses API. API access and model availability depend on your OpenAI account.
+API access and model availability depend on your OpenAI account. Do not save a copy of the notebook with outputs that contain sensitive information.
